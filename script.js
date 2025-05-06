@@ -19,3 +19,13 @@ function generateCards() {
         gameContainer.appendChild(card);
     }
 }
+
+function generateCards() {
+    for (const color of cards) {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.dataset.color = color;
+        card.textContent = '?';
+        gameContainer.appendChild(card);
+    }
+}
